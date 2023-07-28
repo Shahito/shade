@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'UbuntuMono';
+    src: URL('/Shade/style/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf');
+}
+
+/* /Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf
+/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf
+/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf
+/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf */
+
+:root {
+    font-family: 'PT Sans', sans-serif;
+
+    --theme-primary-500: #2D0922;
+    --theme-secondary-500: #F5DEB3;
+
+    --theme-shadow-500: #847557;
+
+    --font-primary: #fff;
+    --font-secondary: #8f8;
+
+    --console-prefix: #63C933;
+    --console-prefix-ssh: #3498DB;
+    --console-prefix-separator: #719CC8;
+    --console-info: #E26038;
+    --console-link: #2A9FB1;
+    --console-icon-btn: #3E3615;
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-normal: 400;
+    --fw-thin: 200;
+
+    --fs-size-300: 0.8rem;
+    --fs-size-500: 1rem;
+    --fs-size-600: 1.5rem;
+    --fs-size-700: 2rem;
+    --fs-size-800: 3rem;
+}
+
+html,
+body {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#home-section {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../ressources/ubuntu_wallpaper_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#background-logo {
+    position: absolute;
+    font-size: 3.5rem;
+    font-family: 'UbuntuMono';
+    color: #111;
+    font-weight: var(--fw-bold);
+    top: 25%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+    mix-blend-mode: color-dodge;
+    text-shadow: 2px 2px var(--theme-primary-500);
+}
+
+#console-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-size-300);
+}
+
+#console-trigger svg {
+    scale: 0.95;
+    width: 4rem;
+    transition: scale 0.25s ease;
+    animation: shakeCTA 2.5s infinite;
+}
+
+#console-trigger:hover svg {
+    scale: 1;
+}
+
+@keyframes shakeCTA {
+    0% {
+        rotate: 0deg;
+    }
+
+    2.5% {
+        rotate: -5deg;
+    }
+
+    7.5% {
+        rotate: 5deg;
+    }
+
+    10% {
+        rotate: 0deg;
+    }
+}
+
+.menu-console {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    font-size: var(--fs-size-300);
+    font-size: 0.9rem;
+    font-family: "UbuntuMono";
+    background-color: var(--theme-primary-500);
+    border-radius: 0.5rem;
+    aspect-ratio: 1 / 0.57;
+    scale: 0;
+    opacity: 0;
+    transition: scale 0.2s, opacity 0.2s;
+}
+
+.menu-console.open {
+    opacity: 1;
+    scale: 1;
+    transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-console.no-action {
+    pointer-events: none;
+}
+
+.console-content {
+    padding: 0.25rem;
+}
+
+.console-important {
+    font-weight: var(--fw-bold);
+}
+
+.console-prefix {
+    color: var(--console-prefix);
+}
+
+.console-prefix-ssh {
+    color: var(--console-prefix-ssh);
+}
+
+.console-prefix-sep {
+    color: var(--console-prefix-separator);
+}
+
+.console-link {
+    width: fit-content;
+    color: var(--console-link);
+}
+
+.console-link:hover,
+.console-link:focus {
+    font-weight: var(--fw-bold);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.console-info {
+    color: var(--console-info);
+}
+
+.console-ls-result {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: fit-content;
+    column-gap: 1ch;
+    margin-right: 1ch;
+}
+
+.console-ls-result div,
+.console-ls-result span {
+    white-space: nowrap;
+}
+
+.ls-line-data,
+.ls-line-hour,
+.ls-line-usergroup {
+    display: none;
+}
+
+.ls-line-data {
+    margin-left: min(3ch, 100%);
+}
+
+.ls-line-hour {
+    text-align: right;
+}
+
+.input-container {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 1ch;
+}
+
+.console-writing-line .console-cursor {
+    animation: blinkCursor 1.4s infinite;
+}
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.page-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    transform-origin: 50% 50%;
+    scale: 0;
+    opacity: 0;
+    transition: scale 0.2s, opacity 0.2s;
+}
+
+.page-container.projects-visible,
+.page-container.services-visible,
+.page-container.resume-visible {
+    opacity: 1;
+    scale: 1;
+    transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.projects-visible #projects-frame,
+.services-visible #services-frame,
+.resume-visible #resume-frame {
+    opacity: 1;
+    z-index: 2;
+    transition: none;
+}
+
+.menu-console .window-title,
+.projects-visible .title-projects,
+.services-visible .title-services,
+.resume-visible .title-resume {
+    display: block;
+}
+
+iframe {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 2.15rem);
+    opacity: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    transition: opacity 0s 0.3s;
+}
+
+.status-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.475rem;
+    max-width: 100%;
+    height: 2.15rem;
+    padding-right: 0.6rem;
+    background-color: grey;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: linear-gradient(#615F54, #46443F);
+}
+
+.window-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: none;
+    font-size: var(--fs-size-300);
+    font-weight: var(--fw-bold);
+}
+
+.bar-reduce-btn,
+.bar-maximize-btn,
+.bar-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 50%;
+    border: 1px solid #413A34;
+}
+
+.bar-reduce-btn,
+.bar-maximize-btn {
+    background: linear-gradient(#8B8A84, #595954);
+}
+
+.bar-close-btn {
+    background: linear-gradient(#ED8767, #E0511F);
+}
+
+.status-bar div svg {
+    width: 7px;
+    aspect-ratio: 1 / 1;
+    fill: var(--console-icon-btn);
+}
+
+@media only screen and (min-width: 480px) {
+    .ls-line-usergroup {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #background-logo {
+        left: 20%;
+    }
+
+    .menu-console {
+        width: 60%;
+        font-size: var(--fs-size-500);
+    }
+
+    .ls-line-prefix {
+        min-width: 21ch;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .page-container {
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+    }
+
+    .console-ls-result {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .ls-line-data,
+    .ls-line-hour {
+        display: block;
+    }
+
+    .status-bar div svg {
+        width: 9px;
+    }
+}

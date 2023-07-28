@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Shade - Services</title>
+    <link rel="stylesheet" href="../style/css/base.css" />
+    <link rel="stylesheet" href="../style/css/style-services.css" />
+    <!-- Tab icon -->
+    <link href="../ressources/icons/tab-icon-light.svg" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="../ressources/icons/tab-icon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)" />
+    <!-- Tab color -->
+    <meta name="theme-color" content="#333">
+    <meta name="msapplication-navbutton-color" content="#333">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main id="services-section">
+        <div class="sticky-header-wrapper">
+            <canvas id="header-background"></canvas>
+            <header class="services-section-header">
+                <h1 class="services-section-title"></h1>
+                <p class="services-section-desc"></p>
+            </header>
+        </div>
+    </main>
+</body>
+<script src="../tools/js/services-json-parser.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script>
+    window.onload = function () {
+        Particles.init({
+            selector: '#header-background',
+            sizeVariations: 3,
+            color: [
+                "#cbb",
+                "#a99",
+                "#877"
+            ]
+        });
+    };
+</script>
+
+</html>

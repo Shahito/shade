@@ -1,0 +1,92 @@
+/* @font-face {
+    font-family: 'font name';
+    src: URL('/template/ressources/font/font.ttf');
+} */
+
+:root {
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+
+    --bg-primary-300: #222;
+    --bg-primary-500: #111;
+    --bg-primary-700: #000;
+    --bg-secondary-300: #7ac;
+    --bg-secondary-500: #58a;
+    --bg-secondary-700: #368;
+
+    --theme-primary-300: #cbb;
+    --theme-primary-500: #a99;
+    --theme-primary-700: #877;
+    --theme-secondary-300: #c2afc0;
+    --theme-secondary-500: #a28fa0;
+    --theme-secondary-700: #826f80;
+
+    --theme-shadow-300: #00f;
+    --theme-shadow-500: #00f;
+    --theme-shadow-700: #00f;
+
+    --font-primary: #fff;
+    --font-secondary: #8f8;
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-normal: 400;
+    --fw-thin: 200;
+
+    --fs-size-300: 0.8rem;
+    --fs-size-500: 1rem;
+    --fs-size-600: 1.5rem;
+    --fs-size-700: 2rem;
+    --fs-size-800: 3rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* DEBUG ONLY */
+    /* outline: 1px solid red; */
+}
+
+body {
+    background-color: var(--bg-primary-500);
+    color: var(--font-primary);
+}
+
+body.preload * {
+    pointer-events: none !important;
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-delay: 0s !important;
+}
+
+h1 {
+    font-size: var(--fs-size-800);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: var(--fs-size-300);
+    font-weight: var(--fw-bold);
+    color: var(--font-secondary);
+    letter-spacing: 0.3ch;
+    text-transform: uppercase;
+    text-shadow: var(--font-secondary) 1px 0 15px;
+}
+
+p {
+    font-size: var(--fs-size-500);
+}
+
+@media only screen and (max-width:1024px) {
+    :root {
+        font-size: 16px;
+    }
+}

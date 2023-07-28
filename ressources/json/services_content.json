@@ -1,0 +1,28 @@
+{
+    "title": "Discover all my<br />services with one click",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />Molestias nemo, ullam voluptatem velit debitis odit.",
+    "services": [
+        {
+            "name": "TimeIT",
+            "title": "TimeIT, la gestion du temps simplifiée !",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
+            "logo_name": "timeit-icon.png",
+            "state": "build",
+            "state_text": "Maintenance",
+            "link": "https://timeit.sha-dev.fr",
+            "link_text": "Ouvrir",
+            "color_accent": "#8484ae"
+        },
+        {
+            "name": "FarStickyLove",
+            "title": "Le post it du matin, même de loin !",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
+            "logo_name": "fsl-icon.svg",
+            "state": "open",
+            "state_text": "Disponible",
+            "link": "https://far-sticky-love.sha-dev.fr",
+            "link_text": "Ouvrir",
+            "color_accent": "#f3f293"
+        }
+    ]
+}

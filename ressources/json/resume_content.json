@@ -1,0 +1,26 @@
+{
+    "desc": "As an individual with exquisite taste in the finest companies, I've been helped represent both client and employer to the highest degree.",
+    "jobs": [
+        {
+            "year": "2021",
+            "title": "Sales sales sales sales",
+            "company": "Eponzer",
+            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "current": true
+        },
+        {
+            "year": "2020",
+            "title": "Sales engineer",
+            "company": "Eponzer inc.",
+            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "current": false
+        },
+        {
+            "year": "2019",
+            "title": "Sales engineer",
+            "company": "Eponzer inc.",
+            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "current": false
+        }
+    ]
+}

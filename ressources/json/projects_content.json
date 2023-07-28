@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "name": "Fourier Series",
+            "estimated_time": 120,
+            "title": "Another way to understand Fourier Series",
+            "desc_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cumque! Sequi rerum commodiaccusantium. Quo, optio. Voluptate, rerum nihil! Voluptas reprehenderit aspernatur dicta providenteaque et qui nemo, maiores libero?",
+            "desc_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid dolore tenetur. Assumenda, veniam. Fuga inventore ab, numquam, perferendis odio repellendus porro excepturi omnis dolorembeatae ea exercitationem, tempore quod.",
+            "link": "https://github.com/Shahito/fourier_series/",
+            "languages": [
+                "Python",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Potato",
+            "estimated_time": 49,
+            "title": "Another way to understand the potato",
+            "desc_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cumque! Sequi rerum commodiaccusantium. Quo, optio. Voluptate, rerum nihil! Voluptas reprehenderit aspernatur dicta providenteaque et qui nemo, maiores libero?",
+            "desc_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid dolore tenetur. Assumenda, veniam. Fuga inventore ab, numquam, perferendis odio repellendus porro excepturi omnis dolorembeatae ea exercitationem, tempore quod.",
+            "link": "https://github.com/Shahito/fourier_series/",
+            "languages": [
+                "Pythato",
+                "PotatoLang",
+                "Javato"
+            ]
+        }
+    ]
+}

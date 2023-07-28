@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Shade - Resume</title>
+    <link rel="stylesheet" href="../style/css/style-resume.css" />
+    <!-- Tab icon -->
+    <link href="../ressources/icons/tab-icon-light.svg" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="../ressources/icons/tab-icon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)" />
+    <!-- Tab color -->
+    <meta name="theme-color" content="#333">
+    <meta name="msapplication-navbutton-color" content="#333">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+        <div id="resume-section">
+            <div class="error-effect"></div>
+            <div id="skills-carousel">
+                <ul>
+                    <li><img src="../ressources/resume-skills-svg/resume-html-logo.svg" alt="HTML logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-css-logo.svg" alt="CSS logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-javascript-logo.svg" alt="JS logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-apache-logo.svg" alt="Apache logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-mysql-logo.svg" alt="MySQL logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-php-logo.svg" alt="PHP logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-git-logo.svg" alt="Git logo"></li>
+                    <li><img src="../ressources/resume-skills-svg/resume-python-logo.svg" alt="Python logo"></li>
+                </ul>
+            </div>
+            <div id="resume-main">
+                <div id="resume-intro">
+                    <h2 class="subtitle">skills and experiences</h2>
+                    <h1 class="title">my resume</h1>
+                    <p>As an individual with exquisite taste in the finest companies, I've been helped represent both
+                        client and employer to the highest degree.</p>
+                </div>
+                <div id="xp-carousel"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script defer src="../tools/js/resume_json_parser.js"></script>
+<script>
+    /* Automatic cloner for skills carousel infinite loop */
+    skills_carousel = document.querySelector("#skills-carousel ul");
+    skills_carousel.innerHTML += skills_carousel.innerHTML;
+</script>
+<script>
+    /* Allow mouse drag to horizontal scroll XP carousel */
+    const slider = document.getElementById("xp-carousel");
+    slider.addEventListener("wheel", function (e) {
+        slider.scrollLeft += e.deltaY;
+    });
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX);
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+
+    // effect based on xp slider scroll percentage
+    slider.onscroll = () => { updateSliderProgression(slider.scrollLeft) };
+
+    function updateSliderProgression(scrollPos) {
+        let maxScrollPos = slider.scrollWidth - slider.clientWidth;
+        let progressPercentage = scrollPos / maxScrollPos;
+        // `${progressPercentage}`;
+    }
+</script>
+
+</html>

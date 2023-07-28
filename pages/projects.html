@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Shade - Projects</title>
+    <link rel="stylesheet" href="../style/css/base.css" />
+    <link rel="stylesheet" href="../style/css/style-projects.css" />
+    <!-- Tab icon -->
+    <link href="../ressources/icons/tab-icon-light.svg" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="../ressources/icons/tab-icon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)" />
+    <!-- Tab color -->
+    <meta name="theme-color" content="#333">
+    <meta name="msapplication-navbutton-color" content="#333">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="preload">
+    <main id="projects-section">
+        <div id="stripes">
+            <div class="stripe"></div>
+        </div>
+        <h1 class="project-section-title">
+            Random
+        </h1>
+        <button id="project-choice-btn" onclick="chooseProject()">
+            <svg viewBox="0 0 255 255" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M 253 128.58 C 253 141.439 251.067 153.847 247.476 165.529 C 232.194 215.241 186.884 251.805 132.712 254.05 C 134.271 250.818 135.147 247.192 135.147 243.362 C 135.147 232.512 128.128 223.3 118.382 220.02 C 120.981 216.117 122.496 211.431 122.496 206.39 C 122.496 193.724 112.933 183.292 100.633 181.919 C 100.761 180.902 100.827 179.864 100.827 178.812 C 100.827 165.213 89.802 154.189 76.203 154.189 C 75.151 154.189 74.114 154.254 73.096 154.382 C 71.723 142.083 61.292 132.52 48.625 132.52 C 43.556 132.52 38.846 134.051 34.931 136.676 C 31.565 127.085 22.431 120.208 11.689 120.208 C 8.249 120.208 4.974 120.913 2 122.187 C 5.329 55.803 60.209 3 127.42 3 C 196.776 3 253 59.224 253 128.58 Z">
+                </path>
+                <path
+                    d="M 251 125.581 C 251 193.161 197.614 248.277 130.712 251.051 C 132.271 247.819 133.147 244.192 133.147 240.362 C 133.147 229.513 126.126 220.3 116.381 217.019 C 118.981 213.117 120.496 208.432 120.496 203.391 C 120.496 190.723 110.933 180.293 98.633 178.919 C 98.762 177.901 98.826 176.864 98.826 175.813 C 98.826 162.213 87.802 151.189 74.202 151.189 C 73.152 151.189 72.114 151.253 71.097 151.383 C 69.722 139.084 59.292 129.52 46.624 129.52 C 41.555 129.52 36.846 131.051 32.931 133.675 C 29.564 124.086 20.432 117.208 9.689 117.208 C 6.249 117.208 2.974 117.912 0 119.187 C 3.33 52.804 58.209 0 125.419 0 C 194.776 0 251 56.224 251 125.581 Z">
+                </path>
+                <path
+                    d="M 196.297 80.503 L 195.979 80.503 C 193.662 80.503 191.505 80.981 189.35 82.099 C 186.875 76.51 181.603 72.996 175.614 72.996 C 173.219 72.996 170.822 73.554 168.667 74.592 C 166.191 69.003 160.92 65.489 154.931 65.489 C 153.015 65.489 151.178 65.808 149.421 66.447 L 149.421 54.15 C 149.421 45.444 142.793 38.657 134.327 38.657 C 125.703 38.657 118.755 45.604 118.755 54.15 L 118.755 106.217 L 112.207 99.749 C 105.977 93.598 95.277 94.638 90.166 99.749 C 85.214 104.699 81.541 115.16 89.128 122.667 L 129.056 162.357 C 129.855 163.156 130.813 163.954 131.932 164.593 C 139.119 170.424 147.665 174.255 165.95 174.255 C 207.796 174.255 211.231 150.699 211.231 124.424 L 211.231 95.995 C 211.311 87.37 204.682 80.503 196.297 80.503 Z M 106.218 107.895 L 120.513 122.108 C 123.627 125.224 128.897 122.987 128.897 118.595 L 128.897 55.666 C 128.897 52.631 131.373 50.236 134.408 50.236 C 137.282 50.236 139.439 52.551 139.439 55.666 L 139.439 101.984 C 139.439 104.779 141.674 107.016 144.469 107.016 C 147.104 107.016 149.181 105.019 149.501 102.543 L 149.501 82.578 C 149.501 79.464 151.737 77.148 154.692 77.148 C 154.772 77.148 157.087 77.148 158.603 78.664 C 159.563 79.544 159.962 80.902 159.962 82.578 L 159.962 107.973 C 159.962 110.768 162.199 113.004 164.994 113.004 C 167.629 113.004 169.706 111.008 170.023 108.533 L 170.023 90.084 C 170.023 86.97 172.26 84.655 175.056 84.655 C 180.486 85.055 180.644 89.605 180.644 90.084 L 180.644 112.445 C 180.644 115.24 182.881 117.476 185.676 117.476 C 188.312 117.476 190.308 115.56 190.627 113.004 L 190.627 96.954 C 190.627 93.919 192.943 91.524 195.899 91.524 C 195.899 91.524 198.214 91.443 199.731 92.96 C 200.689 93.839 201.169 95.196 201.169 97.032 L 201.169 124.503 C 201.169 146.785 201.169 164.353 165.95 164.353 C 151.418 164.353 142.232 161.319 135.126 154.29 L 97.354 116.758 C 96.075 115.48 95.436 113.962 95.597 112.366 C 95.677 110.928 96.395 109.411 97.593 108.212 C 98.792 107.016 100.469 106.455 102.065 106.455 C 103.662 106.296 105.178 106.854 106.218 107.895 Z"
+                    style="transform-box: fill-box; transform-origin: 50% 50%;"
+                    transform="matrix(0.920234, -0.391369, 0.391369, 0.920234, -0.000001, -0.000004)"></path>
+                <path
+                    d="M 76.051 68.71 C 78.764 68.31 80.762 65.915 80.762 63.121 C 80.842 48.666 92.581 36.847 107.115 36.847 C 121.649 36.847 133.388 48.586 133.468 63.121 C 133.468 65.835 135.464 68.31 138.18 68.71 C 141.615 69.188 144.488 66.554 144.488 63.28 C 144.488 42.597 127.719 25.826 107.115 25.826 C 86.512 25.826 69.741 42.597 69.741 63.2 C 69.741 66.554 72.616 69.188 76.051 68.71 Z"
+                    style="transform-box: fill-box; transform-origin: 50% 50%;"
+                    transform="matrix(0.920234, -0.391369, 0.391369, 0.920234, -0.000001, 0.000002)"></path>
+            </svg>
+        </button>
+        <button id="project-back-btn" onclick="chooseProject()">
+            <svg viewBox="0 0 255 255" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M 253 128.58 C 253 141.439 251.067 153.847 247.476 165.529 C 232.194 215.241 186.884 251.805 132.712 254.05 C 134.271 250.818 135.147 247.192 135.147 243.362 C 135.147 232.512 128.128 223.3 118.382 220.02 C 120.981 216.117 122.496 211.431 122.496 206.39 C 122.496 193.724 112.933 183.292 100.633 181.919 C 100.761 180.902 100.827 179.864 100.827 178.812 C 100.827 165.213 89.802 154.189 76.203 154.189 C 75.151 154.189 74.114 154.254 73.096 154.382 C 71.723 142.083 61.292 132.52 48.625 132.52 C 43.556 132.52 38.846 134.051 34.931 136.676 C 31.565 127.085 22.431 120.208 11.689 120.208 C 8.249 120.208 4.974 120.913 2 122.187 C 5.329 55.803 60.209 3 127.42 3 C 196.776 3 253 59.224 253 128.58 Z">
+                </path>
+                <path
+                    d="M 251 125.581 C 251 193.161 197.614 248.277 130.712 251.051 C 132.271 247.819 133.147 244.192 133.147 240.362 C 133.147 229.513 126.126 220.3 116.381 217.019 C 118.981 213.117 120.496 208.432 120.496 203.391 C 120.496 190.723 110.933 180.293 98.633 178.919 C 98.762 177.901 98.826 176.864 98.826 175.813 C 98.826 162.213 87.802 151.189 74.202 151.189 C 73.152 151.189 72.114 151.253 71.097 151.383 C 69.722 139.084 59.292 129.52 46.624 129.52 C 41.555 129.52 36.846 131.051 32.931 133.675 C 29.564 124.086 20.432 117.208 9.689 117.208 C 6.249 117.208 2.974 117.912 0 119.187 C 3.33 52.804 58.209 0 125.419 0 C 194.776 0 251 56.224 251 125.581 Z">
+                </path>
+                <path transform="matrix(0.982452, 0.186516, -0.186516, 0.982452, 61.511032, 32.822651)"
+                    style="transform-origin: 77.988px 54.7948px;"
+                    d="M 152.637 104.804 C 151.298 104.804 150.07 104.038 149.544 102.781 C 149.158 101.869 139.511 80.229 103.44 75.943 C 95.927 75.031 86.928 74.563 76 74.482 L 76 101.454 C 76 102.699 75.327 103.828 74.222 104.424 C 73.123 104.997 71.808 104.915 70.784 104.231 L 1.485 57.584 C 0.55 56.958 0 55.906 0 54.8 C 0 53.684 0.55 52.666 1.485 52.011 L 70.814 5.358 C 71.837 4.65 73.141 4.604 74.252 5.188 C 75.363 5.785 76.023 6.913 76.023 8.123 L 76.023 33.225 C 91.097 35.189 155.976 46.848 155.976 101.483 C 155.976 103.068 154.859 104.454 153.292 104.769 C 153.076 104.804 152.848 104.804 152.637 104.804 Z">
+                </path>
+            </svg>
+        </button>
+    </main>
+</body>
+<script src="../tools/js/projects-json-parser.js"></script>
+<script>
+    var wrapper = document.getElementById("stripes");
+    var btn = document.getElementById("project-choice-btn");
+    var back_btn = document.getElementById("project-back-btn");
+    var project_slides = document.querySelectorAll(".project-slide");
+    var project_choices = [];
+    var last_slide;
+    let size = document.body.clientWidth > 500 ? 250 : 150;
+    let columns = Math.ceil((document.body.clientWidth / size));
+    let angle_deg = 33;
+    let angle_rad = angle_deg * Math.PI / 180;
+    // const stripe_colors = [
+    //     "#f50d4a",
+    //     "#c50d4a",
+    //     "#950d4a",
+    //     "#650d4a",
+    //     "#350d4a",
+    //     "#650d4a",
+    //     "#950d4a",
+    //     "#c50d4a"
+    // ];
+    const stripe_colors = [
+        "#7F6579",
+        "#837D9D",
+        "#7A99BC",
+        "#70B5CD",
+        "#7A99BC",
+        "#837D9D"
+    ];
+    const createStripe = index => {
+        const stripe = document.createElement("div");
+        stripe.style.setProperty("--stripe-background", stripe_colors[index % stripe_colors.length]);
+        stripe.classList.add("stripe");
+        stripe.style.setProperty("--size", `${size * (index + 1)}px`);
+        return stripe;
+    };
+    const createStripes = quantity => {
+        Array.from(Array(quantity)).map((stripe, index) => {
+            wrapper.appendChild(createStripe(index));
+        });
+    };
+
+    const createGrid = () => {
+        size = document.body.clientWidth > document.body.clientWidth ? 250 : 150;
+        columns = Math.ceil(Math.max(document.body.clientWidth, document.body.clientHeight) / size);
+        columns = columns % 2 == 0 ? columns + 1 : columns;
+        screen_ratio = document.body.clientWidth > document.body.clientHeight ? (document.body.clientWidth / document.body.clientHeight) : (document.body.clientHeight / document.body.clientWidth);
+        scale_factor = screen_ratio * Math.cos(angle_rad) * (1 / screen_ratio + Math.tan(angle_rad));
+        wrapper.innerHTML = "";
+        wrapper.style.setProperty("--columns", columns);
+        wrapper.style.setProperty("--stripe-thickness", `${size}px`);
+        wrapper.style.setProperty("--scale-factor", `${scale_factor}`);
+        wrapper.style.setProperty("--angle-deg", `-${angle_deg}deg`);
+        baseSide = document.body.clientWidth > document.body.clientHeight ? document.body.clientWidth : document.body.clientHeight;
+        columns = Math.ceil(document.body.clientWidth / size + document.body.clientHeight / size);
+        createStripes(columns);
+    };
+
+    function chooseProject() {
+        wrapper = document.getElementById("stripes");
+        is_expand = wrapper.classList.toggle("project-expand");
+        btn = document.getElementById("project-choice-btn");
+        back_btn = document.getElementById("project-back-btn");
+        project_slides = document.querySelectorAll(".project-slide");
+        btn.classList.toggle("project-expand");
+        back_btn.classList.toggle("project-expand");
+        if (is_expand) {
+            if (project_choices.length <= 1) { project_choices = Array.from(document.querySelectorAll(".project-slide")); }
+            console.log(project_choices);
+            project_choice = project_choices.splice(Math.floor(Math.random() * project_choices.length), 1)[0];
+            project_choice.classList.add("selected");
+            last_slide = project_choice;
+        } else {
+            if (last_slide) { last_slide.classList.remove("selected"); }
+            stripe_colors.unshift(stripe_colors.pop());
+            document.querySelectorAll(".stripe").forEach((stripe, index) => {
+                stripe.style.setProperty("--stripe-background", stripe_colors[index % stripe_colors.length]);
+            });
+        }
+    }
+
+    createGrid();
+    window.onresize = () => createGrid();
+    setTimeout(() => {
+        document.body.classList.remove("preload");
+    }, 1000);
+</script>
+
+</html>
