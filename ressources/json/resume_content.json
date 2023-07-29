@@ -3,23 +3,23 @@
     "jobs": [
         {
             "year": "2021",
-            "title": "Sales sales sales sales",
-            "company": "Eponzer",
-            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "title": "Engineer",
+            "company": "Company",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
             "current": true
         },
         {
             "year": "2020",
-            "title": "Sales engineer",
-            "company": "Eponzer inc.",
-            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "title": "Engineer",
+            "company": "Company",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
             "current": false
         },
         {
             "year": "2019",
-            "title": "Sales engineer",
-            "company": "Eponzer inc.",
-            "desc": "I didn't do shit, just dfc of all their shit. Only money baby, no work except fuck the intern.",
+            "title": "Engineer",
+            "company": "Company",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
             "current": false
         }
     ]

@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'UbuntuMono';
-    src: URL('/Shade/style/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf');
+    src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
 }
 
-/* /Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf
-/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf
-/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf
-/Shade/dev-parts/home/style/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
 
 :root {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
     --theme-primary-500: #2D0922;
     --theme-secondary-500: #F5DEB3;
@@ -36,6 +36,8 @@
     --fs-size-600: 1.5rem;
     --fs-size-700: 2rem;
     --fs-size-800: 3rem;
+
+    --loading-delay: 4s;
 }
 
 html,
@@ -44,6 +46,75 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
+}
+
+#lock-sreen-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top left, #be714b, #c24648);
+    z-index: -10;
+    user-select: none;
+    opacity: 0;
+    animation: hideOnLoad var(--loading-delay);
+}
+
+@keyframes hideOnLoad {
+
+    0%,
+    80% {
+        z-index: 10;
+        opacity: 1;
+    }
+
+    100% {
+        z-index: 10;
+        opacity: 0;
+    }
+}
+
+.user-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1.25rem;
+    aspect-ratio: 1 / 1;
+    font-size: var(--fs-size-800);
+    border-radius: 50%;
+}
+
+.user-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    border: 2px solid transparent;
+    border-top-color: white;
+    z-index: -1;
+    border-radius: 50%;
+    animation: spinLoader 1.2s linear 4;
+}
+
+@keyframes spinLoader {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
 
 #home-section {
@@ -55,6 +126,9 @@ body {
 }
 
 #background-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     font-size: 3.5rem;
     font-family: 'UbuntuMono';
@@ -66,6 +140,12 @@ body {
     opacity: 1;
     mix-blend-mode: color-dodge;
     text-shadow: 2px 2px var(--theme-primary-500);
+    user-select: none;
+}
+
+#background-logo .subtitle {
+    font-size: var(--fs-size-600);
+    padding-left: 3px;
 }
 
 #console-trigger {
@@ -79,6 +159,15 @@ body {
     align-items: center;
     gap: 0.5rem;
     font-size: var(--fs-size-300);
+    user-select: none;
+    opacity: 0;
+    animation: showAfterLoading 1s calc(var(--loading-delay) + 0.5s) forwards;
+}
+
+@keyframes showAfterLoading {
+    to {
+        opacity: 1;
+    }
 }
 
 #console-trigger svg {
@@ -131,6 +220,14 @@ body {
     opacity: 1;
     scale: 1;
     transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+#about-frame {
+    transition-delay: 0s;
+}
+
+#about-frame.open {
+    transition-delay: 0.3s;
 }
 
 .menu-console.no-action {
@@ -273,6 +370,7 @@ iframe {
     bottom: 0;
     width: 100%;
     height: calc(100% - 2.15rem);
+    background-color: var(--theme-primary-500);
     opacity: 0;
     border-radius: 0 0 0.5rem 0.5rem;
     transition: opacity 0s 0.3s;
@@ -339,6 +437,7 @@ iframe {
 @media only screen and (min-width: 768px) {
     #background-logo {
         left: 20%;
+        font-size: 4rem;
     }
 
     .menu-console {

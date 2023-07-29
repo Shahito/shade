@@ -1,19 +1,4 @@
-/* @font-face {
-    font-family: 'font name';
-    src: URL('/template/ressources/font/font.ttf');
-} */
-
 :root {
-    font-size: 20px;
-    font-family: 'PT Sans', sans-serif;
-
-    /* --bg-primary-300: #000434;
-    --bg-primary-500: #000212;
-    --bg-primary-700: #000101;
-    --bg-secondary-300: #7ac;
-    --bg-secondary-500: #58a;
-    --bg-secondary-700: #368; */
-
     --bg-primary-300: #280c33;
     --bg-primary-500: #210c33;
     --bg-primary-700: #100619;

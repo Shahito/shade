@@ -1,6 +1,9 @@
-:root {
-    font-family: 'PT Sans', sans-serif;
+@font-face {
+    font-family: 'Finlandica';
+    src: url('../fonts/Finlandica/Finlandica-VariableFont_wght.ttf');
+}
 
+:root {
     --theme-primary-500: #a99;
     --theme-secondary-500: #F5DEB3;
 
@@ -34,6 +37,11 @@
 body {
     position: relative;
     z-index: -1;
+}
+
+h1,
+h2 {
+    font-family: 'Finlandica';
 }
 
 #projects-section {
@@ -322,10 +330,11 @@ code span.square-bracket {
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: calc(50% + -11rem) calc(2rem);
+    translate: calc(50% - 12rem) calc(1.9rem);
     width: 5rem;
     height: 5rem;
     background-color: transparent;
+    clip-path: polygon(0% 50%, 50% 100%, 100% 100%, 100% 0%, 0% 0%);
     border-radius: 50%;
     border: none;
     outline: none;
@@ -448,7 +457,7 @@ code span.square-bracket {
     }
 
     #project-choice-btn {
-        translate: calc(-50% + 20rem) calc(-50% - 5rem);
+        translate: calc(-50% + 17rem) calc(-50% - 5rem);
         width: 10rem;
         height: 10rem;
     }

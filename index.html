@@ -2,11 +2,7 @@
 <html lang="fr">
 
 <head>
-
-    <!-- Live render /!\ DEBUG ONLY /!\ -->
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-
-    <title>Template</title>
+    <title>Shade - Portfolio</title>
     <link rel="stylesheet" href="./style/css/base.css" />
     <link rel="stylesheet" href="./style/css/style.css" />
     <!-- Tab icon -->
@@ -22,8 +18,14 @@
 </head>
 
 <body>
+    <div id="lock-sreen-loader">
+        <div class="user-icon-wrapper">
+            <i class="fa fa-user"></i>
+        </div>
+        <span class="user-name">Duncan</span>
+    </div>
     <main id="home-section">
-        <div id="background-logo">ShadeOS</div>
+        <div id="background-logo">ShadeOS<span class="subtitle">Duncan Paturange<br />Portfolio</span></div>
         <div id="console-trigger">
             <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -73,14 +75,12 @@
             <div class="status-bar">
                 <div class="window-title">user@shade: ~</div>
                 <div class="bar-reduce-btn">
-                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                         <rect y="58.5" width="128" height="11"></rect>
                     </svg>
                 </div>
                 <div class="bar-maximize-btn">
-                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                         <path d="M 0 0 L 128 0 L 128 128 L 0 128 Z M 11 117 L 117 117 L 117 11 L 11 11 Z"></path>
                     </svg>
                 </div>
@@ -96,7 +96,7 @@
                 <span class="console-ssh-command-line">
                     <span class="console-important"><span class="console-prefix">user@local</span>:
                         <span class="console-prefix-sep">~</span></span>$
-                    <span class="command-ssh">ssh user@sha-dev.fr</span><span class="console-cursor">█</span>
+                    <span class="command-ssh">ssh user@sha-dev.fr</span><span class="console-cursor">&#9608;</span>
                 </span><br />
                 <span class="console-ssh-result">Setting up ssh-import-id ...</span><br />
                 <span class="console-ssh-result">Processing triggers for systemd ...</span><br />
@@ -108,7 +108,7 @@
                 <span class="console-ls-command-line">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
                             class="console-prefix-sep">~</span></span>$
-                    <span class="ls-command">ls -l</span><span class="console-cursor">█</span>
+                    <span class="ls-command">ls -l</span><span class="console-cursor">&#9608;</span>
                 </span><br />
                 <div class="console-ls-result">
                     <div class="ls-line-prefix">lrwxr-xr-x 1 <span class="ls-line-usergroup">root shade</span></div>
@@ -129,27 +129,28 @@
                 <span class="console-command" id="projects-command">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
                             class="console-prefix-sep">~</span></span>$
-                    <span class="console-typing-content">./my_bite_size_projects</span>
-                    <span class="console-cursor">█</span>
+                    <span class="console-typing-content">./my_bite_size_projects</span><span
+                        class="console-cursor">&#9608;</span>
                     <br /></span>
                 <span class="console-command" id="services-command">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
                             class="console-prefix-sep">~</span></span>$ <span
-                        class="console-typing-content">./my_online_services</span><span class="console-cursor">█</span>
+                        class="console-typing-content">./my_online_services</span><span
+                        class="console-cursor">&#9608;</span>
                     <br /></span>
                 <span class="console-command" id="resume-command">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
                             class="console-prefix-sep">~</span></span>$ <span
-                        class="console-typing-content">./my_resume</span><span class="console-cursor">█</span>
+                        class="console-typing-content">./my_resume</span><span class="console-cursor">&#9608;</span>
                     <br /></span>
                 <span class="console-command" id="about-command">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
                             class="console-prefix-sep">~</span></span>$
-                    <span class="console-typing-content">cat ./about</span><span class="console-cursor">█</span>
+                    <span class="console-typing-content">cat ./about</span><span class="console-cursor">&#9608;</span>
                     <br /></span>
                 <span class="console-writing-line">
                     <span class="console-important"><span class="console-prefix-ssh">user@shade</span>:<span
-                            class="console-prefix-sep">~</span></span>$ <span class="console-cursor">█</span>
+                            class="console-prefix-sep">~</span></span>$ <span class="console-cursor">&#9608;</span>
                 </span>
             </div>
         </nav>
@@ -231,10 +232,10 @@
 
     let page_container = document.querySelector(".page-container");
     let status_bar_close_btn = page_container.querySelector(".status-bar .bar-close-btn");
-    let projects_frame = page_container.querySelector("#projects-frame");
-    let services_frame = page_container.querySelector("#services-frame");
-    let resume_frame = page_container.querySelector("#resume-frame");
-    let about_frame = document.querySelector("#about-frame");
+    var projects_frame = page_container.querySelector("#projects-frame");
+    var services_frame = page_container.querySelector("#services-frame");
+    var resume_frame = page_container.querySelector("#resume-frame");
+    var about_frame = document.querySelector("#about-frame");
     let about_close_btn = about_frame.querySelector(".status-bar .bar-close-btn");
 
     document.getElementById("console-trigger").addEventListener("click", () => {
@@ -244,16 +245,16 @@
     });
 
     status_bar_close_btn.addEventListener("click", () => {
-        if (page_container.classList.contains("projects-visible")) {
-            keepOnTop(projects_frame);
-        } else if (page_container.classList.contains("services-visible")) {
-            keepOnTop(services_frame);
-        } else if (page_container.classList.contains("resume-visible")) {
-            keepOnTop(resume_frame);
+        const visibleClass = ["projects-visible", "services-visible", "resume-visible"]
+            .find((className) => page_container.classList.contains(className));
+
+        if (visibleClass) {
+            const frame = window[`${visibleClass.split("-")[0]}_frame`];
+            if (frame) {
+                keepOnTop(frame);
+            }
+            page_container.classList.remove(...["projects-visible", "services-visible", "resume-visible"]);
         }
-        page_container.classList.remove("projects-visible");
-        page_container.classList.remove("services-visible");
-        page_container.classList.remove("resume-visible");
     });
 
     about_close_btn.addEventListener("click", () => {
@@ -272,14 +273,16 @@
         hideAllCommands();
         animateCommand(resume_command, resume_frame, "resume-visible");
     });
+
     about_link.addEventListener("click", (e) => {
         hideAllCommands();
-        animateCommand(about_command, null);
-        menu_console.classList.remove("open");
         setTimeout(() => {
+            menu_console.classList.remove("open");
             about_frame.classList.add("open");
-        }, 100);
+        }, 100 * about_command.querySelector(".console-typing-content").textContent.length + 250);
+        animateCommand(about_command, null, null);
     });
+
 
     function animateCommand(command, frame, callback_class) {
         menu_console.classList.add("no-action");
@@ -304,11 +307,11 @@
     }
 
     function animateTyping(content_wrapper) {
-        content = content_wrapper.innerHTML;
-        content_wrapper.innerHTML = "";
+        content = content_wrapper.textContent;
+        content_wrapper.textContent = "";
         for (let i = 0; i < content.length; i++) {
             setTimeout(() => {
-                content_wrapper.innerHTML += content[i];
+                content_wrapper.textContent += content[i];
             }, 100 * i);
         }
     }
@@ -329,7 +332,7 @@
             el.style.display = "none";
             setTimeout(() => {
                 el.style.display = "inline";
-            }, (ssh_command.innerHTML.length - 1) * 100 + idx * 250);
+            }, (ssh_command.textContent.length - 1) * 100 + idx * 250);
         });
         setTimeout(() => {
             ssh_command_cursor.style.display = "none";
@@ -340,14 +343,14 @@
                     animateTyping(ls_command);
                 }, 250);
             }, 2000);
-        }, ssh_command.innerHTML.length * 100);
+        }, ssh_command.textContent.length * 100);
         setTimeout(() => {
             ls_result.style.display = "grid";
             ls_command_cursor.style.display = "none";
             setTimeout(() => {
                 cuurent_line.style.display = "inline";
             }, 250);
-        }, ssh_command.innerHTML.length * 100 + ls_command.innerHTML.length * 100 + 2250);
+        }, ssh_command.textContent.length * 100 + ls_command.textContent.length * 100 + 2250);
         animateTyping(ssh_command);
     }
 

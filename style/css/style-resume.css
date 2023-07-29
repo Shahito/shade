@@ -1,12 +1,4 @@
-/* @font-face {
-    font-family: 'font name';
-    src: URL('/template/ressources/font/font.ttf');
-} */
-
 :root {
-    font-size: 20px;
-    font-family: 'PT Sans', sans-serif;
-
     --bg-primary-300: #222;
     --bg-primary-500: #111;
     --bg-primary-700: #000;
@@ -49,33 +41,6 @@
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: var(--font-primary);
-}
-
-h1 {
-    font-size: var(--fs-size-800);
-    font-weight: var(--fw-semibold);
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: var(--fs-size-300);
-    font-weight: var(--fw-bold);
-    color: var(--font-secondary);
-    letter-spacing: 0.3ch;
-    text-transform: uppercase;
-    text-shadow: var(--font-secondary) 1px 0 15px;
-}
-
-p {
-    font-size: var(--fs-size-500);
 }
 
 #resume-section {

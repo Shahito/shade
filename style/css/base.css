@@ -1,11 +1,16 @@
-/* @font-face {
-    font-family: 'font name';
-    src: URL('/template/ressources/font/font.ttf');
-} */
+@font-face {
+    font-family: 'Cuprum';
+    src: URL('../fonts/Cuprum/Cuprum-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: URL('../fonts/Glory/Glory-VariableFont_wght.ttf');
+}
 
 :root {
     font-size: 20px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Glory', sans-serif;
 
     --bg-primary-300: #222;
     --bg-primary-500: #111;
@@ -49,8 +54,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    /* DEBUG ONLY */
-    /* outline: 1px solid red; */
 }
 
 body {
@@ -69,12 +72,14 @@ body.preload * {
 h1 {
     font-size: var(--fs-size-800);
     font-weight: var(--fw-semibold);
+    font-family: 'Cuprum';
     text-transform: uppercase;
 }
 
 h2 {
     font-size: var(--fs-size-300);
     font-weight: var(--fw-bold);
+    font-family: 'Cuprum';
     color: var(--font-secondary);
     letter-spacing: 0.3ch;
     text-transform: uppercase;
@@ -82,7 +87,9 @@ h2 {
 }
 
 p {
+    font-family: 'Glory';
     font-size: var(--fs-size-500);
+    font-weight: var(--fw-normal);
 }
 
 @media only screen and (max-width:1024px) {
