@@ -1,29 +1,36 @@
 {
     "projects": [
         {
-            "name": "Lorem ipsum",
-            "estimated_time": 120,
-            "title": "Lorem ipsum dolor sit amet consectetur",
-            "desc_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cumque! Sequi rerum commodiaccusantium. Quo, optio. Voluptate, rerum nihil! Voluptas reprehenderit aspernatur dicta providenteaque et qui nemo, maiores libero?",
-            "desc_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid dolore tenetur. Assumenda, veniam. Fuga inventore ab, numquam, perferendis odio repellendus porro excepturi omnis dolorembeatae ea exercitationem, tempore quod.",
-            "link": "https://github.com/Shahito/",
+            "name": "Fourier Series",
+            "estimated_time": 40,
+            "title": "Another way to understand Fourier Series",
+            "desc_1": "Discover the world of Fourier series, a fascinating representation of cosine and sine functions with respect to time. But what if we looked at their complementary functions? A simple yet captivating interplay of cosines and sines forms stacks of circles!",
+            "desc_2": "In my pursuit to understand Fourier series better, I created an interactive tool. Inspired by Mr. Fermi's famous Fermi's Elephant, it offers a playful and modest way to visualize Fourier series with all functions you want.",
+            "link": "https://github.com/Shahito/Fourier-Series",
             "languages": [
-                "Language_1",
-                "Language_2",
-                "Language_3"
+                "Python 3"
             ]
         },
         {
-            "name": "Ipsum lorem",
-            "estimated_time": 50,
-            "title": "Lorem ipsum dolor sit amet consectetur",
-            "desc_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cumque! Sequi rerum commodiaccusantium. Quo, optio. Voluptate, rerum nihil! Voluptas reprehenderit aspernatur dicta providenteaque et qui nemo, maiores libero?",
-            "desc_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid dolore tenetur. Assumenda, veniam. Fuga inventore ab, numquam, perferendis odio repellendus porro excepturi omnis dolorembeatae ea exercitationem, tempore quod.",
-            "link": "https://github.com/Shahito/",
+            "name": "Monty Hall problem",
+            "estimated_time": 2,
+            "title": "A viral probabilistic paradox that sparks debate",
+            "desc_1": "A statistical dilemma arose a few years ago, sparking numerous debates among individuals. A seemingly simple situation: three doors, one prize, and a choice. The game show host opens a losing door and asks if you'd change your mind about your initial choice. Would YOU switch doors?",
+            "desc_2": "Uncover the secrets of the Monty Hall problem with my simple program. Through real simulations, explore the outcomes of both the \"switching\" strategy and \"sticking to initial choice\" strategy. Delve deeper into the probabilities and discover which approach maximizes your chances of winning the hidden prize behind the doors.",
+            "link": "https://github.com/Shahito/Monty-Hall-problem",
             "languages": [
-                "Language_1",
-                "Language_2",
-                "Language_3"
+                "Python"
+            ]
+        },
+        {
+            "name": "Reseeet",
+            "estimated_time": 10,
+            "title": "Simple network simulation for my courses at the university",
+            "desc_1": "In our college courses, we embarked on an exciting journey into the world of Java programming with a focus on network simulations. Inspired by the \"Packet Tracer\" software, we have created a simplified version that aligns perfectly with our field of study.",
+            "desc_2": "Through this project, we dive into the intricacies of the Java language while perfecting our networking skills. Through hands-on experience, we have developed a fundamental understanding of network interactions, packet management and data flow, paving the way for our future endeavors in this fascinating area of computer science.",
+            "link": "https://github.com/Shahito/Reseeet",
+            "languages": [
+                "Java"
             ]
         }
     ]

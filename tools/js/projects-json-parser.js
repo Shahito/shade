@@ -3,7 +3,7 @@ var projects_container = document.getElementById("projects-section");
 function getLanguages(languages) {
     let parsed_languages = "";
     for (let n = 0; n < languages.length; n++) {
-        parsed_languages += `<code>&emsp;&emsp;&emsp;&emsp;<span class="content">"${languages[n]}"</span>${languages.length - 1 != n ? ',' : ''}</code>`;
+        parsed_languages += `<code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="content">"${languages[n]}"</span>${languages.length - 1 != n ? ',' : ''}</code>`;
     }
     return parsed_languages;
 }
@@ -30,19 +30,18 @@ fetch('../ressources/json/projects_content.json')
                         </span>
                         <p class="project-content">
                         ${projects[i]['desc_1']}
-                            <br />
-                            <br />
-                            ${projects[i]['desc_2']}
+                        ${projects[i]['desc_2'] != "" ? "<br /><br />" : ""}
+                        ${projects[i]['desc_2']}
                         </p>
                     </div>
                     <div class="project-code-wrapper">
                         <div>
                             <code><span class="curly-bracket">{</span></code>
-                            <code>&emsp;&emsp;<span class="selector">"subject"</span>: <span class="content">"${projects[i]['name']}"</span>,</code>
-                            <code>&emsp;&emsp;<span class="selector">"estimated_time_hour"</span>: <span class="content-number">${projects[i]['estimated_time']}</span>,</code>
-                            <code>&emsp;&emsp;<span class="selector">"languages"</span>: <span class="square-bracket">[</span></code>
+                            <code>&nbsp;&nbsp;<span class="selector">"subject"</span>: <span class="content">"${projects[i]['name']}"</span>,</code>
+                            <code>&nbsp;&nbsp;<span class="selector">"estimated_time_hour"</span>: <span class="content-number">${projects[i]['estimated_time']}</span>,</code>
+                            <code>&nbsp;&nbsp;<span class="selector">"languages"</span>: <span class="square-bracket">[</span></code>
                             ${getLanguages(projects[i]['languages'])}
-                            <code>&emsp;&emsp;<span class="square-bracket">]</span></code>
+                            <code>&nbsp;&nbsp;<span class="square-bracket">]</span></code>
                             <code><span class="curly-bracket">}</span></code>
                         </div>
                     </div>
