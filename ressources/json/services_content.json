@@ -50,6 +50,18 @@
             "link": "",
             "link_text": "Ajouter",
             "color_accent": ""
+            "color_accent": "#f3f293"
+        },
+        {
+            "name": "PokeIT",
+            "title": "Défiez simplement vos amis dans un duel de Poker Texas Holdem",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
+            "logo_name": "pokeit-icon.svg",
+            "state": "build",
+            "state_text": "Développement",
+            "link": "https://pokeit.sha-dev.fr",
+            "link_text": "Télécharger",
+            "color_accent": "#ff7c32"
         }
     ]
 }
