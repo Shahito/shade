@@ -128,7 +128,6 @@
         back_btn.classList.toggle("project-expand");
         if (is_expand) {
             if (project_choices.length <= 1) { project_choices = Array.from(document.querySelectorAll(".project-slide")); }
-            console.log(project_choices);
             project_choice = project_choices.splice(Math.floor(Math.random() * project_choices.length), 1)[0];
             project_choice.classList.add("selected");
             last_slide = project_choice;

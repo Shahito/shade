@@ -1,25 +1,25 @@
 {
-    "desc": "As an individual with exquisite taste in the finest companies, I've been helped represent both client and employer to the highest degree.",
+    "desc": "J'ai, tout au cours de mes expériences, acquis des compétences et l'envie d'apprendre sans cesse pour satisfaire tant les entreprises que la clientèle.",
     "jobs": [
         {
-            "year": "2021",
-            "title": "Engineer",
-            "company": "Company",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
+            "year": "2023",
+            "title": "Vendeur en ligne",
+            "company": "LivingLayout",
+            "desc": "Cette nouvelle expérience éxige une acquisition constante de compétences dans des domaines très variés : gestion, commerce, marketing. Cela demande aussi un intérêt dans de nouveaux languages de programmation spécifiques aux boutiques en ligne.",
             "current": true
         },
         {
-            "year": "2020",
-            "title": "Engineer",
-            "company": "Company",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
+            "year": "2021-2022",
+            "title": "Développeur",
+            "company": "Catchingbox",
+            "desc": "Ce poste nécéssitait beaucoup de polyvalence et m'a permis de de développer mes compétences et un intêret pour la prise de leadership afin de régler tout défi qui se présente, en programmation, en commerce et en gestion clientèle.",
             "current": false
         },
         {
-            "year": "2019",
-            "title": "Engineer",
-            "company": "Company",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem.",
+            "year": "2019-2021",
+            "title": "Étudiant",
+            "company": "IUT Nice Côte d'Azur",
+            "desc": "Spécialisé dans les Réseaux et Télécoms, j'ai exploré de nombreux domaines dont le développement dans plusieurs languages. Un point de départ solide pour créer une motivation à acquérir de nouvelles compétences.",
             "current": false
         }
     ]

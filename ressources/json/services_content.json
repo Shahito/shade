@@ -1,27 +1,55 @@
 {
-    "title": "Discover all my<br />services with one click",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />Molestias nemo, ullam voluptatem velit debitis odit.",
+    "title": "Découvrez tous mes<br/>services en un seul clic",
+    "desc": "Retrouvez mes créations : une collection d'applications variées,<br/>chacune représentant un défi et une réalisation dans mon parcours",
+    "comments": [
+        "Title must be 42 chars max (or 84 on two lines)",
+        "Desc must be 420 chars max (preferably 320 chars)",
+        "Link must not be in this file if the service isn't open"
+    ],
     "services": [
         {
             "name": "TimeIT",
-            "title": "TimeIT, la gestion du temps simplifiée !",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
-            "logo_name": "timeit-icon.png",
+            "title": "La gestion du temps simplifiée !",
+            "desc": "Découvrez TimeIT, un outil en constante évolution pour gérer vos tâches quotidiennes, vos missions professionnelles ou encore vos révisions ! Créer une tâche et mettez la en pause en un seul clic. Fixez des objectifs et analysez votre efficacité à travers un onglet dédié ! ⏳",
+            "logo_name": "timeit-icon.svg",
             "state": "build",
             "state_text": "Maintenance",
-            "link": "https://timeit.sha-dev.fr",
+            "link": "",
             "link_text": "Ouvrir",
-            "color_accent": "#8484ae"
+            "color_accent": "#8484AE"
         },
         {
             "name": "FarStickyLove",
             "title": "Le post it du matin, même de loin !",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
+            "desc": "Découvrez FarStickyLove, le site qui vous relie à distance avec votre partenaire, comme si vous laissiez des petits mots le matin ! Dessinez vos post-it, et après 24h, ils disparaissent. Mais rassurez-vous, quand votre moitié est occupée, vous retrouverez vos tendres mots à jamais gravés. Connectez-vous à l'amour, où que vous soyez. 💕",
             "logo_name": "fsl-icon.svg",
             "state": "open",
             "state_text": "Disponible",
             "link": "https://far-sticky-love.sha-dev.fr",
             "link_text": "Ouvrir",
+            "color_accent": "#F3F293"
+        },
+        {
+            "name": "ReadIT",
+            "title": "La lecture rapide accessible !",
+            "desc": "Découvrez ReadIT, une application permettant une lecture ultra-rapide sans effort. Les mots défilent au centre de l'écran à un rythme idéal, vous permettant d'atteindre des vitesses de lecture supérieures à la moyenne. Suivez votre évolution et personnalisez le texte selon vos préférences. Lisez plus efficacement au quotidien ! 📚",
+            "logo_name": "readit-icon.svg",
+            "state": "close",
+            "state_text": "Développement",
+            "link": "",
+            "link_text": "Télécharger",
+            "color_accent": "#4ECDC4"
+        },
+        {
+            "name": "DropIT",
+            "title": "Protégez-vous des arnaques en ligne !",
+            "desc": "Découvrez DropIT, l'extension Chrome qui vous protège des arnaques en détectant les sites de dropshipping. Grâce à une analyse basée sur plusieurs critères, le programme attribue une note et évalue la probabilité qu'un site soit un revendeur. Faîtes vos achats en ligne en toute confiance ! 🛡️",
+            "logo_name": "",
+            "state": "close",
+            "state_text": "Développement",
+            "link": "",
+            "link_text": "Ajouter",
+            "color_accent": ""
             "color_accent": "#f3f293"
         },
         {
