@@ -8,15 +8,15 @@
     ],
     "services": [
         {
-            "name": "TimeIT",
-            "title": "La gestion du temps simplifiée !",
-            "desc": "Découvrez TimeIT, un outil en constante évolution pour gérer vos tâches quotidiennes, vos missions professionnelles ou encore vos révisions ! Créer une tâche et mettez la en pause en un seul clic. Fixez des objectifs et analysez votre efficacité à travers un onglet dédié ! ⏳",
-            "logo_name": "timeit-icon.svg",
+            "name": "CheckIT",
+            "title": "Notez et analysez vos parties d'échecs en toute simplicité !",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla? 🔍",
+            "logo_name": "checkit-icon.svg",
             "state": "build",
-            "state_text": "Maintenance",
-            "link": "",
-            "link_text": "Ouvrir",
-            "color_accent": "#8484AE"
+            "state_text": "Développement",
+            "link": "https://checkit.sha-dev.fr",
+            "link_text": "Télécharger",
+            "color_accent": "#90A1EF"
         },
         {
             "name": "FarStickyLove",
@@ -30,38 +30,59 @@
             "color_accent": "#F3F293"
         },
         {
-            "name": "ReadIT",
-            "title": "La lecture rapide accessible !",
-            "desc": "Découvrez ReadIT, une application permettant une lecture ultra-rapide sans effort. Les mots défilent au centre de l'écran à un rythme idéal, vous permettant d'atteindre des vitesses de lecture supérieures à la moyenne. Suivez votre évolution et personnalisez le texte selon vos préférences. Lisez plus efficacement au quotidien ! 📚",
-            "logo_name": "readit-icon.svg",
-            "state": "close",
-            "state_text": "Développement",
-            "link": "",
-            "link_text": "Télécharger",
-            "color_accent": "#4ECDC4"
-        },
-        {
             "name": "DropIT",
             "title": "Protégez-vous des arnaques en ligne !",
             "desc": "Découvrez DropIT, l'extension Chrome qui vous protège des arnaques en détectant les sites de dropshipping. Grâce à une analyse basée sur plusieurs critères, le programme attribue une note et évalue la probabilité qu'un site soit un revendeur. Faîtes vos achats en ligne en toute confiance ! 🛡️",
             "logo_name": "",
-            "state": "close",
+            "state": "build",
             "state_text": "Développement",
             "link": "",
             "link_text": "Ajouter",
-            "color_accent": ""
             "color_accent": "#f3f293"
         },
         {
+            "name": "SnipeIT",
+            "title": " !",
+            "desc": "Voici un bot de trading crypto basé sur l'IA qui traque les micro-tendances pour générer du profit quotidien, même en période creuse. Grâce à un entraînement automatique, il établie des stratégies de \"sniping\" et cible les meilleures opportunités. 🔫",
+            "logo_name": "snipeit-icon.svg",
+            "state": "build",
+            "state_text": "Développement",
+            "link": "https://snipeit.sha-dev.fr",
+            "link_text": "Télécharger",
+            "color_accent": "#90A1EF"
+        },
+        {
             "name": "PokeIT",
-            "title": "Défiez simplement vos amis dans un duel de Poker Texas Holdem",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla?",
+            "title": "Défiez simplement vos amis dans un duel de Poker Texas Holdem !",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto,impedit commodi debitis dolorem quos? Veniam ducimus earum odit quidem, tempora quasi vero est fugitlaboriosam quaerat sit harum nulla? 🎲",
             "logo_name": "pokeit-icon.svg",
             "state": "build",
             "state_text": "Développement",
             "link": "https://pokeit.sha-dev.fr",
             "link_text": "Télécharger",
             "color_accent": "#ff7c32"
+        },
+        {
+            "name": "ReadIT",
+            "title": "La lecture rapide accessible !",
+            "desc": "Découvrez ReadIT, une application permettant une lecture ultra-rapide sans effort. Les mots défilent au centre de l'écran à un rythme idéal, vous permettant d'atteindre des vitesses de lecture supérieures à la moyenne. Suivez votre évolution et personnalisez le texte selon vos préférences. Lisez plus efficacement au quotidien ! 📚",
+            "logo_name": "readit-icon.svg",
+            "state": "build",
+            "state_text": "Développement",
+            "link": "",
+            "link_text": "Télécharger",
+            "color_accent": "#4ECDC4"
+        },
+        {
+            "name": "TimeIT",
+            "title": "La gestion du temps simplifiée !",
+            "desc": "Découvrez TimeIT, un outil en constante évolution pour gérer vos tâches quotidiennes, vos missions professionnelles ou encore vos révisions ! Créer une tâche et mettez la en pause en un seul clic. Fixez des objectifs et analysez votre efficacité à travers un onglet dédié ! ⏳",
+            "logo_name": "timeit-icon.svg",
+            "state": "close",
+            "state_text": "Clôturé",
+            "link": "",
+            "link_text": "Ouvrir",
+            "color_accent": "#8484AE"
         }
     ]
 }
